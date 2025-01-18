@@ -1,0 +1,179 @@
+.footer {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; 
+}
+
+.company_details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.footer_contact_us {
+    border-radius: 5px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+}
+
+.footer_contact_us span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_contact_us span p {
+    margin: 5px;
+}
+
+.footer_contact_us span p a{
+    color: var(--text-color);
+}
+
+.footer_follow_us h2 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin: 5px 0;
+}
+
+.footer_follow_us_icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer_follow_us_icons .social_icon {
+    background-color: var(--primary-alpha);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s; 
+}
+
+.footer_follow_us_icons .facebook_icon {
+    color: rgb(42, 117, 255);
+}
+
+.footer_follow_us_icons .instagram_icon {
+    color: #d62976; /* Instagram color */
+}
+
+.footer_follow_us_icons .youtube_icon {
+    color: red; /* YouTube color */
+}
+
+.footer_follow_us_icons .Xtwitter_icon {
+    color: #000; /* Twitter color */
+}
+
+/* General styling for categories and links */
+.categories_links,
+.company_links,
+.available_countries,
+.customer_service {
+    flex: 1;
+}
+
+/* Section titles */
+.categories_links h2,
+.company_links h2,
+.available_countries h2,
+.customer_service h2 {
+    color: var(--text-color); /* Title color */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* List styles */
+.categories_links ul,
+.company_links ul,
+.available_countries ul,
+.customer_service ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories_links li,
+.company_links li,
+.available_countries li,
+.customer_service li {
+    margin: 5px 0;
+}
+
+.categories_links li a,
+.company_links li a,
+.available_countries li a,
+.customer_service li a {
+    color: var(--text-color);
+    font-size: var(--font-size);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.categories_links li a:hover,
+.company_links li a:hover,
+.available_countries li a:hover,
+.customer_service li a:hover {
+    text-decoration: underline;
+}
+
+.copy_right_bar {
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-grey);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+    .footer_content {
+        grid-template-columns: repeat(4, 1fr); /* Adjust to four columns */
+    }
+}
+
+@media (max-width: 850px) {
+    .footer_content {
+        grid-template-columns: repeat(3, 1fr); /* Adjust to three columns */
+    }
+}
+
+@media (max-width: 650px) {
+    .footer_content {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to two columns */
+    }
+}
+
+@media (max-width: 450px) {
+    .footer_content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .company_details {
+        align-items: center;
+        justify-content: center;
+    }
+}
