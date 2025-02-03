@@ -1,0 +1,131 @@
+.card {
+    width: 12vw;
+    height: 18vw;
+    min-width: 150px;
+    min-height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+    gap: 5px;
+}
+
+.card .image {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card .image img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.card .content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+}
+
+.product_name {
+    height: 30%;
+}
+
+.content .product_name h1 {
+    font-size: var(--font-size);
+    margin: 0 0 5px;
+    line-height: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+}
+
+.content button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.3vw;
+    font-size: 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price > h1 {
+    margin: 0;
+    font-size: 1vw;
+    color: var(--primary-color);
+}
+
+.price .discount .discount_price h1 {
+    margin: 0;
+    text-decoration: line-through;
+    color: grey;
+    font-size: 0.9vw;
+}
+
+.discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount #dis {
+    margin-left: 5px;
+    font-size: 0.9vw;
+}
+
+.discount_price {
+    display: flex;
+    align-items: center;
+}
+
+.card_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars {
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 1vw;
+    color: rgb(230, 230, 0);
+}
+
+@media only screen and (max-width: 1200px) {
+    .content .product_name h1,
+    .price h1,
+    .price .discount .discount_price h1,
+    .discount #dis,
+    .stars,
+    .star,
+    .content button {
+        font-size: 10.5px;
+    }
+}

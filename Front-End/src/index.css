@@ -6,6 +6,7 @@
   --background-grey: #dfdfdf;
   --text-color: #444444;
   --font-size: 14px;
+  --font-size-headings: 18px;
   --heading-font-size: 22px;
   --box-shadow: 0 0 10px 0 rgba(99, 99, 99, 0.25);
 }
@@ -15,4 +16,10 @@ body{
   padding: 0;
   font-family: 'Roboto';
   background-color: #dbdbdb;
+}
+
+.heading_line{
+  width: 30px;
+  height: 5px;
+  background: var(--primary-color);
 }
